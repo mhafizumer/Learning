@@ -19,6 +19,11 @@ class OrderManager {
         return $orders;
     }
 
+    public function training()
+    {
+        return "training";
+    }
+
     public function getOrderItems($orderId) {
         $query = "SELECT products.name, order_items.quantity, order_items.price
                   FROM order_items

@@ -15,6 +15,10 @@ if (isset($_POST['delete_order'])) {
         echo "<div class='alert alert-danger'>Error deleting order.</div>";
     }
 
+    if (true) {
+        echo " Condition True";
+    }
+
 }
 
 $orders = $orderManager->getAllOrders();
